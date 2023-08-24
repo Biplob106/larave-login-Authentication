@@ -42,7 +42,7 @@ class AuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
 
-        return redirect("auth.dashboard")->withSuccess('You have signed-in');
+        return redirect("dashboard")->withSuccess('You have signed-in');
     }
     public function create(array $data)
 
